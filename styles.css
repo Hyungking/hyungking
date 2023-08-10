@@ -1,0 +1,106 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-grey: hsl(212, 45%, 89%);
+    --clr-greyish-blue: hsl(220, 15%, 65%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+  
+    --ff-primary: 'Outfit', sans-serif;
+  
+    --fw-regular: 400;
+    --fw-bold: 700;
+  }
+  *,
+  *::after,
+  *::after {
+   box-sizing: border-box;
+  }
+
+*{
+    margin: 0%;
+}
+
+html,
+body{
+    font-family:'Pacifico', cursive;
+    height: 100%;
+}
+
+html{
+    font-size: 80%;
+    background-color: black;
+}
+
+body{
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   object-fit: cover ;
+   width :auto;
+   padding:.3rem;
+}
+
+h1 {
+    text-align: center;
+    line-height: 2;
+    text-transform: capitalize;
+    color: black;
+}
+
+p{
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    
+}
+
+body{
+    font-weight: var(--fw-bold);
+    color: var(--clr-greyish-blue);
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    text-align: center;
+    background-color: #f5efef9c;
+    border-radius: 1.4rem;
+    margin: 2.8rem;
+    padding: 1.4rem;
+    max-width: 300px;
+}
+
+@media (min-width: 600px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+.product-content {
+    padding-inline: 1.4rem;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    display: block;
+    flex-direction: column-reverse;
+    gap: 1.3rem;
+}
+
+.attribution {
+    font-style: italic;
+    text-transform: capitalize;
+    opacity:.7;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    text-align: center;
+
+        
+}
